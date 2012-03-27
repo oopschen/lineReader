@@ -4,19 +4,19 @@ var assert = require('assert');
 var path = __dirname + "/a";
 
 var i = 0;
-var readCB = function(err,buf,fbr) {
+var readCB = function(err,buf) {
 	if(!buf) {
-		fbr.close();
+		this.close();
 		return;
 	}
 	assert.equal(buf.toString().split('\n')[i],i+1,'fail 1 ea');
 	i++;
-	fbr.read(readCB);
+	this.read(readCB);
 };
-new FileByteReader(path,function(err,fbr){
+new FileByteReader(path,function(err){
 	if(err) {
 		console.error(err);
 		return;
 	}
-	fbr.read(readCB);
+	this.read(readCB);
 });
