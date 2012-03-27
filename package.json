@@ -6,7 +6,7 @@
   "keywords": ["line","text file","reader","readline"],
   "repository": {
     "type": "git",
-    "url": "git@github.com:LeiChen/plane.git"
+    "url": "git@github.com:LeiChen/lineReader.git"
   },
-  "main": "index.js"
+  "main": "lib/lineReader.js"
 }
