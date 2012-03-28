@@ -1,6 +1,6 @@
 {
   "name": "lineReader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a util help you read text file line by line",
   "homepage": "",
   "keywords": ["line","text file","reader","readline"],
